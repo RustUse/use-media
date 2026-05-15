@@ -30,6 +30,7 @@ dependencies = [
  "use-media-timestamp",
  "use-media-type",
  "use-resolution",
+ "use-svg",
 ]
 
 [[package]]
@@ -46,4 +47,8 @@ version = "0.0.1"
 
 [[package]]
 name = "use-resolution"
+version = "0.0.1"
+
+[[package]]
+name = "use-svg"
 version = "0.0.1"

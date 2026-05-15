@@ -9,6 +9,7 @@ members = [
     "crates/use-media-duration",
     "crates/use-media-timestamp",
     "crates/use-media-type",
+    "crates/use-svg",
 ]
 resolver = "2"
 
@@ -33,6 +34,7 @@ use-media-duration = { version = "0.0.1", path = "crates/use-media-duration" }
 use-media-timestamp = { version = "0.0.1", path = "crates/use-media-timestamp" }
 use-media-type = { version = "0.0.1", path = "crates/use-media-type" }
 use-resolution = { version = "0.0.1", path = "crates/use-resolution" }
+use-svg = { version = "0.0.1", path = "crates/use-svg" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"

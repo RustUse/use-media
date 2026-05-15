@@ -22,6 +22,7 @@ use-media-duration.workspace = true
 use-media-timestamp.workspace = true
 use-media-type.workspace = true
 use-resolution.workspace = true
+use-svg.workspace = true
 
 [lints]
 workspace = true
