@@ -1,0 +1,17 @@
+[package]
+name = "use-media-duration"
+description = "Primitive media duration helpers"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-media-duration"
+keywords = ["media", "duration", "time", "samples"]
+categories = ["algorithms", "science"]
+
+[lints]
+workspace = true
