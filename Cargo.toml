@@ -5,6 +5,7 @@ members = [
     "crates/use-dimensions",
     "crates/use-resolution",
     "crates/use-frame-rate",
+    "crates/use-image",
     "crates/use-bitrate",
     "crates/use-media-duration",
     "crates/use-media-timestamp",
@@ -29,6 +30,7 @@ use-aspect-ratio = { version = "0.0.1", path = "crates/use-aspect-ratio" }
 use-bitrate = { version = "0.0.1", path = "crates/use-bitrate" }
 use-dimensions = { version = "0.0.1", path = "crates/use-dimensions" }
 use-frame-rate = { version = "0.0.1", path = "crates/use-frame-rate" }
+use-image = { version = "0.0.1", path = "crates/use-image" }
 use-media = { version = "0.0.1", path = "crates/use-media" }
 use-media-duration = { version = "0.0.1", path = "crates/use-media-duration" }
 use-media-timestamp = { version = "0.0.1", path = "crates/use-media-timestamp" }

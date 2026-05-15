@@ -1,0 +1,18 @@
+[package]
+name = "use-image"
+description = "Practical image format and sizing helpers"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://rustuse.org"
+readme = "README.md"
+keywords = ["image", "media", "format", "dimensions", "graphics"]
+categories = ["multimedia::images", "parser-implementations"]
+
+[lints]
+workspace = true

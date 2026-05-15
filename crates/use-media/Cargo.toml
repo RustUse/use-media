@@ -18,6 +18,7 @@ use-aspect-ratio.workspace = true
 use-bitrate.workspace = true
 use-dimensions.workspace = true
 use-frame-rate.workspace = true
+use-image.workspace = true
 use-media-duration.workspace = true
 use-media-timestamp.workspace = true
 use-media-type.workspace = true
