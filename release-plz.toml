@@ -1,0 +1,93 @@
+[workspace]
+release = false
+release_always = false
+changelog_update = false
+pr_labels = ["release"]
+max_analyze_commits = 2000
+
+[[package]]
+name = "use-aspect-ratio"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-dimensions"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-resolution"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-frame-rate"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-image"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-bitrate"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-media-duration"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-media-timestamp"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-media-type"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-svg"
+release = true
+version_group = "rustuse-media"
+
+[[package]]
+name = "use-media"
+release = true
+version_group = "rustuse-media"
+changelog_update = true
+changelog_path = "./CHANGELOG.md"
+changelog_include = [
+  "use-aspect-ratio",
+  "use-dimensions",
+  "use-resolution",
+  "use-frame-rate",
+  "use-image",
+  "use-bitrate",
+  "use-media-duration",
+  "use-media-timestamp",
+  "use-media-type",
+  "use-svg",
+]
+
+[changelog]
+header = """# Changelog
+
+## Unreleased
+"""
+protect_breaking_commits = true
+sort_commits = "oldest"
+commit_parsers = [
+  { message = "^feat(?:\\([^)]+\\))?!?: .+", group = "Added" },
+  { message = "^fix(?:\\([^)]+\\))?!?: .+", group = "Fixed" },
+  { message = "^security(?:\\([^)]+\\))?!?: .+", group = "Security" },
+  { message = "^(?:refactor|perf|change)(?:\\([^)]+\\))?!?: .+", group = "Changed" },
+  { message = "^docs(?:\\([^)]+\\))?!?: .+", group = "Documentation" },
+  { message = "^(?:build|ci|chore|deps|test)(?:\\([^)]+\\))?!?: .+", group = "Tooling" },
+  { footer = "^changelog: ?ignore$", skip = true },
+  { message = "^.*", group = "Changed" },
+]
