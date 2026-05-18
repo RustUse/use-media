@@ -74,7 +74,7 @@ fn normalize_tag_whitespace(input: &str) -> String {
                     suppress_space = false;
                     normalized.push(ch);
                     active_quote = Some(ch);
-                }
+                },
                 '>' => {
                     if normalized.ends_with(' ') {
                         normalized.pop();
@@ -83,7 +83,7 @@ fn normalize_tag_whitespace(input: &str) -> String {
                     inside_tag = false;
                     pending_space = false;
                     suppress_space = false;
-                }
+                },
                 '=' => {
                     if normalized.ends_with(' ') {
                         normalized.pop();
@@ -91,7 +91,7 @@ fn normalize_tag_whitespace(input: &str) -> String {
                     normalized.push('=');
                     pending_space = false;
                     suppress_space = true;
-                }
+                },
                 '/' => {
                     if normalized.ends_with(' ') {
                         normalized.pop();
@@ -99,7 +99,7 @@ fn normalize_tag_whitespace(input: &str) -> String {
                     normalized.push('/');
                     pending_space = false;
                     suppress_space = false;
-                }
+                },
                 _ if ch.is_whitespace() => pending_space = true,
                 _ => {
                     if pending_space
@@ -113,7 +113,7 @@ fn normalize_tag_whitespace(input: &str) -> String {
                     normalized.push(ch);
                     pending_space = false;
                     suppress_space = false;
-                }
+                },
             }
         } else if ch == '<' {
             inside_tag = true;

@@ -40,3 +40,29 @@ use-svg = { version = "0.0.1", path = "crates/use-svg" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
+[workspace.metadata.rustuse.release]
+publish = false
+versioning = "lockstep-0.x"
+first-publish-candidates = [
+    "use-aspect-ratio",
+    "use-dimensions",
+    "use-resolution",
+    "use-frame-rate",
+    "use-image",
+    "use-bitrate",
+    "use-media-duration",
+    "use-media-timestamp",
+    "use-media-type",
+    "use-svg",
+    "use-media",
+]
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+expect_used = "warn"
+multiple_crate_versions = "allow"
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+todo = "deny"
+unimplemented = "deny"
+unwrap_used = "warn"

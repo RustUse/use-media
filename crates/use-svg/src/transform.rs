@@ -38,21 +38,21 @@ pub fn normalize_transform(value: &str) -> String {
                 }
                 normalized.push('(');
                 pending_space = false;
-            }
+            },
             ')' => {
                 if normalized.ends_with(' ') {
                     normalized.pop();
                 }
                 normalized.push(')');
                 pending_space = true;
-            }
+            },
             ',' => {
                 if normalized.ends_with(' ') {
                     normalized.pop();
                 }
                 normalized.push(',');
                 pending_space = false;
-            }
+            },
             _ => {
                 if pending_space
                     && !normalized.is_empty()
@@ -63,7 +63,7 @@ pub fn normalize_transform(value: &str) -> String {
                 }
                 normalized.push(ch);
                 pending_space = false;
-            }
+            },
         }
     }
 

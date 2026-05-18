@@ -163,7 +163,7 @@ pub(crate) fn find_tag_end(input: &str, start: usize) -> Option<usize> {
         match ch {
             '"' | '\'' => active_quote = Some(ch),
             '>' => return Some(start + offset + 2),
-            _ => {}
+            _ => {},
         }
     }
 
@@ -239,7 +239,7 @@ fn parse_attribute_value(tag: &str, index: &mut usize) -> String {
                 *index += 1;
             }
             value
-        }
+        },
         _ => {
             let start = *index;
             while *index < bytes.len()
@@ -251,6 +251,6 @@ fn parse_attribute_value(tag: &str, index: &mut usize) -> String {
             }
 
             tag[start..*index].to_string()
-        }
+        },
     }
 }
