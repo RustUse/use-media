@@ -21,7 +21,7 @@ jobs:
         use-aspect-ratio use-dimensions use-resolution use-frame-rate use-image use-bitrate use-media-duration use-media-timestamp use-media-type use-svg
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install stable Rust toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
