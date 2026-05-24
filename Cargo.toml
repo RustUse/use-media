@@ -23,20 +23,20 @@ publish = false
 readme = "README.md"
 repository = "https://github.com/RustUse/use-media"
 rust-version = "1.95.0"
-version = "0.0.1"
+version = "0.0.2"
 
 [workspace.dependencies]
-use-aspect-ratio = { version = "0.0.1", path = "crates/use-aspect-ratio" }
-use-bitrate = { version = "0.0.1", path = "crates/use-bitrate" }
-use-dimensions = { version = "0.0.1", path = "crates/use-dimensions" }
-use-frame-rate = { version = "0.0.1", path = "crates/use-frame-rate" }
-use-image = { version = "0.0.1", path = "crates/use-image" }
-use-media = { version = "0.0.1", path = "crates/use-media" }
-use-media-duration = { version = "0.0.1", path = "crates/use-media-duration" }
-use-media-timestamp = { version = "0.0.1", path = "crates/use-media-timestamp" }
-use-media-type = { version = "0.0.1", path = "crates/use-media-type" }
-use-resolution = { version = "0.0.1", path = "crates/use-resolution" }
-use-svg = { version = "0.0.1", path = "crates/use-svg" }
+use-aspect-ratio = { version = "0.0.2", path = "crates/use-aspect-ratio" }
+use-bitrate = { version = "0.0.2", path = "crates/use-bitrate" }
+use-dimensions = { version = "0.0.2", path = "crates/use-dimensions" }
+use-frame-rate = { version = "0.0.2", path = "crates/use-frame-rate" }
+use-image = { version = "0.0.2", path = "crates/use-image" }
+use-media = { version = "0.0.2", path = "crates/use-media" }
+use-media-duration = { version = "0.0.2", path = "crates/use-media-duration" }
+use-media-timestamp = { version = "0.0.2", path = "crates/use-media-timestamp" }
+use-media-type = { version = "0.0.2", path = "crates/use-media-type" }
+use-resolution = { version = "0.0.2", path = "crates/use-resolution" }
+use-svg = { version = "0.0.2", path = "crates/use-svg" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"

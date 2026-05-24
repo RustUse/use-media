@@ -4,27 +4,27 @@ version = 4
 
 [[package]]
 name = "use-aspect-ratio"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-bitrate"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-dimensions"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-frame-rate"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-image"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-media"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-aspect-ratio",
  "use-bitrate",
@@ -40,20 +40,20 @@ dependencies = [
 
 [[package]]
 name = "use-media-duration"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-media-timestamp"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-media-type"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-resolution"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-svg"
-version = "0.0.1"
+version = "0.0.2"
